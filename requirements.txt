@@ -1,0 +1,17 @@
+# Core AI & Inference
+torch>=2.0.0
+torchvision
+ultralytics>=8.3.0
+numpy<2.0.0
+
+# Video Processing & Math
+opencv-python
+numpy<2.0.0
+requests
+Pillow
+# System Metrics & Utilities
+pynvml
+psutil
+tqdm
+matplotlib
+python-dotenv

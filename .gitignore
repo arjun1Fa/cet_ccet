@@ -1,0 +1,60 @@
+# Video and cache
+data/
+videos/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment
+.env
+.env*
+id_ed25519_armada
+id_ed25519_new
+id_ed25519_new.bak
+.venv/
+vaazha/
+.virtual_documents/
+.ipynb_checkpoints/
+
+# Scripts & Test Helpers
+run_tests*.py
+check.py
+generate_test_videos.py
+test_capture.py
+test_scheduler.py
+test_gpu.py
+test_metrics.py
+test_dashboard.py
+test_all.py
+test_integration.py
+test_trt_engine.py
+compile_engine.py
+test_fair_scheduler.py
+
+# Models & Engine Artifacts
+*.pt
+*.onnx
+*.engine
+yolo*.onnx
+yolo*.engine
+*.torchscript
+
+# FFMPEG binaries
+ffmpeg.exe
+ffplay.exe
+ffprobe.exe
+
+# Comprehensive logs and output results
+*.txt
+*.log
+!README.md
+!requirements.txt
+!requirement.txt
+*.zip
+.dat 
+Dockerfile
+
+# OS specifically
+.DS_Store
+Thumbs.db
