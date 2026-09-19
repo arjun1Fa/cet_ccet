@@ -7,7 +7,7 @@
 [cite_start]A highly optimized, multi-threaded video processing pipeline capable of running YOLOv11 object detection on 10 simultaneous video streams. [cite_start]Built for a 36-hour hackathon, this project solves the problem of "stream starvation" by combining aggressive GPU optimization with a mathematically fair scheduling algorithm[cite: 10, 42].
 
 ## 📖 Plain-English Overview
-Imagine a busy restaurant kitchen (the GPU) trying to cook orders for 10 different tables (the video streams) at the same time. [cite_start]If the chef only cooks for the loudest tables, the quiet ones will starve. 
+Imagine a busy restaurant kitchen (the GPU) trying to cook orders for 10 different tables (the video streams) at the same time. [cite_start]If the chef only cooks for the loudest tables, the quiet ones will starve. ok
 
 This project acts as the perfect restaurant manager. [cite_start]It uses a **Fair Scheduler** to ensure every table gets their food fairly, while the **GPU Optimizer** upgrades the kitchen equipment so the chef can cook massive batches of food in a fraction of the time. [cite_start]The result is blazing-fast object detection (100+ FPS) without ignoring any video feeds[cite: 33, 35].
 
