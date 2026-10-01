@@ -1,0 +1,28 @@
+name: Python quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test-core:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install test dependencies
+        run: python -m pip install --upgrade pip "numpy<2.0"
+
+      - name: Compile Python modules
+        run: python -m compileall -q shared person2_gpu person3_video person4_validation tests
+
+      - name: Run core unit tests
+        run: python -m unittest discover -s tests -p "test_*.py" -v
